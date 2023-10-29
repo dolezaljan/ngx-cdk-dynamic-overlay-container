@@ -1,5 +1,5 @@
 import { Component, ElementRef, Renderer2 } from '@angular/core';
-import { MatLegacyDialog as MatDialog } from "@angular/material/legacy-dialog";
+import { MatDialog } from "@angular/material/dialog";
 import { DynamicMatDialog } from "../../dynamic-overlay-container/dynamic-mat-dialog";
 import { DYNAMIC_MAT_DIALOG_PROVIDERS } from "../../dynamic-overlay-container/dynamic-overlay.module";
 import { ScopedDialogComponent } from "../scoped-dialog/scoped-dialog.component";

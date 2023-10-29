@@ -1,6 +1,6 @@
 import { OverlayModule } from "@angular/cdk/overlay";
 import { NgModule } from "@angular/core";
-import { MatLegacyDialogModule as MatDialogModule } from "@angular/material/legacy-dialog";
+import { MatDialogModule } from "@angular/material/dialog";
 import { DynamicMatDialog } from "./dynamic-mat-dialog";
 import { DynamicDialog } from "./dynamic-dialog";
 import { DynamicOverlay } from "./dynamic-overlay";

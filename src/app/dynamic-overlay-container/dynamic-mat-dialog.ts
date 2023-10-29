@@ -1,7 +1,7 @@
 import { Location } from "@angular/common";
 import { Inject, Injectable, Injector, Optional, Renderer2, SkipSelf } from "@angular/core";
 import { DynamicDialog } from "./dynamic-dialog";
-import { MAT_LEGACY_DIALOG_SCROLL_STRATEGY as MAT_DIALOG_SCROLL_STRATEGY, MAT_LEGACY_DIALOG_DEFAULT_OPTIONS as MAT_DIALOG_DEFAULT_OPTIONS, MatLegacyDialog as MatDialog, MatLegacyDialogConfig as MatDialogConfig } from "@angular/material/legacy-dialog";
+import { MAT_DIALOG_SCROLL_STRATEGY, MAT_DIALOG_DEFAULT_OPTIONS, MatDialog, MatDialogConfig } from "@angular/material/dialog";
 import { OverlayContainer } from '@angular/cdk/overlay';
 import { DynamicOverlay } from "./dynamic-overlay";
 import { ANIMATION_MODULE_TYPE } from '@angular/platform-browser/animations';
