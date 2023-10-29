@@ -11,28 +11,25 @@ import { RootDialogComponent } from './root-dialog/root-dialog.component';
 import { ScopedModule } from "./scoped/scoped.module";
 
 @NgModule( {
-  declarations: [
-    AppComponent,
-    RootDialogComponent
-  ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    MatButtonModule,
-    MatDialogModule,
-    DynamicMatDialogModule,
-    ScopedModule,
-    RouterModule.forRoot(
-      [
-        {
-          path: "lazy",
-          loadChildren: () => import("./lazy/lazy.module").then(x => x.LazyModule)
-        }
-      ],
-    )
-  ],
-  entryComponents: [RootDialogComponent],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        RootDialogComponent
+    ],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        MatButtonModule,
+        MatDialogModule,
+        DynamicMatDialogModule,
+        ScopedModule,
+        RouterModule.forRoot([
+            {
+                path: "lazy",
+                loadChildren: () => import("./lazy/lazy.module").then(x => x.LazyModule)
+            }
+        ])
+    ],
+    bootstrap: [AppComponent]
 } )
 export class AppModule {
 }

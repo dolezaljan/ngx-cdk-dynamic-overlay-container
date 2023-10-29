@@ -9,21 +9,20 @@ import { LazyDialogComponent } from './lazy-dialog/lazy-dialog.component';
 import { LazyHostComponent } from './lazy-host/lazy-host.component';
 
 @NgModule( {
-  imports: [
-    CommonModule,
-    MatDialogModule,
-    MatButtonModule,
-    DynamicMatDialogModule,
-    RouterModule.forChild( [
-      {
-        path: '',
-        component: LazyHostComponent,
-        pathMatch: 'full'
-      },
-    ] )
-  ],
-  declarations: [LazyHostComponent, LazyDialogComponent],
-  entryComponents: [LazyDialogComponent]
+    imports: [
+        CommonModule,
+        MatDialogModule,
+        MatButtonModule,
+        DynamicMatDialogModule,
+        RouterModule.forChild([
+            {
+                path: '',
+                component: LazyHostComponent,
+                pathMatch: 'full'
+            },
+        ])
+    ],
+    declarations: [LazyHostComponent, LazyDialogComponent]
 } )
 export class LazyModule {
 }

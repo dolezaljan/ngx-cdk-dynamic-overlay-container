@@ -8,15 +8,14 @@ import { ScopedDialogComponent } from "./scoped-dialog/scoped-dialog.component";
 import { ScopedHostComponent } from "./scoped-host/scoped-host.component";
 
 @NgModule( {
-  imports: [
-    CommonModule,
-    MatButtonModule,
-    MatDialogModule,
-    DynamicMatDialogModule
-  ],
-  declarations: [ScopedHostComponent, ScopedDialogComponent],
-  entryComponents: [ScopedDialogComponent],
-  exports: [ScopedHostComponent]
+    imports: [
+        CommonModule,
+        MatButtonModule,
+        MatDialogModule,
+        DynamicMatDialogModule
+    ],
+    declarations: [ScopedHostComponent, ScopedDialogComponent],
+    exports: [ScopedHostComponent]
 } )
 export class ScopedModule {
 }
