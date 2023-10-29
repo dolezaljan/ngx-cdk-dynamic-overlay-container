@@ -26,7 +26,7 @@ import { ScopedModule } from "./scoped/scoped.module";
       [
         {
           path: "lazy",
-          loadChildren: "./lazy/lazy.module#LazyModule"
+          loadChildren: () => import("./lazy/lazy.module").then(x => x.LazyModule)
         }
       ],
     )

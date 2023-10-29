@@ -1,7 +1,9 @@
 import { Location } from "@angular/common";
 import { Inject, Injectable, Injector, Optional, Renderer2, SkipSelf } from "@angular/core";
-import { MAT_DIALOG_SCROLL_STRATEGY, MatDialog } from "@angular/material";
+import { MAT_DIALOG_SCROLL_STRATEGY, MAT_DIALOG_DEFAULT_OPTIONS, MatDialog, MatDialogConfig } from "@angular/material/dialog";
+import { OverlayContainer } from '@angular/cdk/overlay';
 import { DynamicOverlay } from "./dynamic-overlay";
+import { ANIMATION_MODULE_TYPE } from '@angular/platform-browser/animations';
 
 @Injectable()
 export class DynamicMatDialog extends MatDialog {
@@ -11,10 +13,14 @@ export class DynamicMatDialog extends MatDialog {
   constructor( _overlay:DynamicOverlay,
                _injector:Injector,
                @Optional() location:Location,
+               @Optional() @Inject(MAT_DIALOG_DEFAULT_OPTIONS) _defaultOptions: MatDialogConfig,
                @Inject( MAT_DIALOG_SCROLL_STRATEGY ) _scrollStrategy,
-               @Optional() @SkipSelf() _parentDialog:DynamicMatDialog ) {
+               @Optional() @SkipSelf() _parentDialog:DynamicMatDialog,
+               _overlayContainer: OverlayContainer,
+               @Optional() @Inject(ANIMATION_MODULE_TYPE) animationMode?: 'NoopAnimations' | 'BrowserAnimations'
+  ) {
 
-    super( _overlay, _injector, location, _scrollStrategy, _parentDialog );
+    super( _overlay, _injector, location, _defaultOptions, _scrollStrategy, _parentDialog, _overlayContainer, animationMode );
 
     this._customOverlay = _overlay;
   }
