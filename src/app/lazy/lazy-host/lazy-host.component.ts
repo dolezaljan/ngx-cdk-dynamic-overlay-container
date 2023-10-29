@@ -1,6 +1,6 @@
 import { Component, ElementRef, Renderer2 } from '@angular/core';
 import { MatDialog } from "@angular/material/dialog";
-import { DynamicMatDialog } from "../../dynamic-overlay-container/dynamic-dialog";
+import { DynamicMatDialog } from "../../dynamic-overlay-container/dynamic-mat-dialog";
 import { LazyDialogComponent } from "../lazy-dialog/lazy-dialog.component";
 
 @Component( {

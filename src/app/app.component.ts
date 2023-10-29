@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { MatDialog } from "@angular/material/dialog";
-import { DynamicMatDialog } from "./dynamic-overlay-container/dynamic-dialog";
+import { DynamicMatDialog } from "./dynamic-overlay-container/dynamic-mat-dialog";
 import { RootDialogComponent } from "./root-dialog/root-dialog.component";
 
 @Component( {
