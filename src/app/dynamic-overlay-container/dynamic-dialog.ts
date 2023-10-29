@@ -10,14 +10,15 @@ export class DynamicMatDialog extends MatDialog {
 
   private _customOverlay:DynamicOverlay;
 
-  constructor( _overlay:DynamicOverlay,
-               _injector:Injector,
-               @Optional() location:Location,
-               @Optional() @Inject(MAT_DIALOG_DEFAULT_OPTIONS) _defaultOptions: MatDialogConfig,
-               @Inject( MAT_DIALOG_SCROLL_STRATEGY ) _scrollStrategy,
-               @Optional() @SkipSelf() _parentDialog:DynamicMatDialog,
-               _overlayContainer: OverlayContainer,
-               @Optional() @Inject(ANIMATION_MODULE_TYPE) animationMode?: 'NoopAnimations' | 'BrowserAnimations'
+  constructor(
+    _overlay:DynamicOverlay,
+    _injector:Injector,
+    @Optional() location:Location,
+    @Optional() @Inject(MAT_DIALOG_DEFAULT_OPTIONS) _defaultOptions: MatDialogConfig,
+    @Inject( MAT_DIALOG_SCROLL_STRATEGY ) _scrollStrategy,
+    @Optional() @SkipSelf() _parentDialog:DynamicMatDialog,
+    _overlayContainer: OverlayContainer,
+    @Optional() @Inject(ANIMATION_MODULE_TYPE) animationMode?: 'NoopAnimations' | 'BrowserAnimations'
   ) {
 
     super( _overlay, _injector, location, _defaultOptions, _scrollStrategy, _parentDialog, _overlayContainer, animationMode );

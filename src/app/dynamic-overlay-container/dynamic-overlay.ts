@@ -9,17 +9,18 @@ export class DynamicOverlay extends Overlay {
 
   private _dynamicOverlayContainer:DynamicOverlayContainer;
 
-  constructor( scrollStrategies:ScrollStrategyOptions,
-               _overlayContainer:DynamicOverlayContainer,
-               _componentFactoryResolver:ComponentFactoryResolver,
-               _positionBuilder:OverlayPositionBuilder,
-               _keyboardDispatcher: OverlayKeyboardDispatcher,
-               _injector:Injector,
-               _ngZone:NgZone,
-               @Inject(DOCUMENT) _document: any,
-               _directionality: Directionality,
-               _location: Location,
-               _outsideClickDispatcher: OverlayOutsideClickDispatcher,
+  constructor(
+    scrollStrategies:ScrollStrategyOptions,
+    _overlayContainer:DynamicOverlayContainer,
+    _componentFactoryResolver:ComponentFactoryResolver,
+    _positionBuilder:OverlayPositionBuilder,
+    _keyboardDispatcher: OverlayKeyboardDispatcher,
+    _injector:Injector,
+    _ngZone:NgZone,
+    @Inject(DOCUMENT) _document: any,
+    _directionality: Directionality,
+    _location: Location,
+    _outsideClickDispatcher: OverlayOutsideClickDispatcher,
   ) {
 
     super( scrollStrategies,
