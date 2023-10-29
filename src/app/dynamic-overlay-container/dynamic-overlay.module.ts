@@ -2,6 +2,7 @@ import { OverlayModule } from "@angular/cdk/overlay";
 import { NgModule } from "@angular/core";
 import { MatDialogModule } from "@angular/material/dialog";
 import { DynamicMatDialog } from "./dynamic-mat-dialog";
+import { DynamicDialog } from "./dynamic-dialog";
 import { DynamicOverlay } from "./dynamic-overlay";
 import { DynamicOverlayContainer } from "./dynamic-overlay-container";
 
@@ -14,6 +15,7 @@ import { DynamicOverlayContainer } from "./dynamic-overlay-container";
 export const DYNAMIC_MAT_DIALOG_PROVIDERS = [
   DynamicOverlayContainer,
   DynamicOverlay,
+  DynamicDialog,
   DynamicMatDialog
 ];
 
