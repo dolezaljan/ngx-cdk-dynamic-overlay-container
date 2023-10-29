@@ -1,5 +1,5 @@
 import { Inject, Injectable, Injector, Optional, Renderer2, SkipSelf } from "@angular/core";
-import { MAT_DIALOG_SCROLL_STRATEGY } from "@angular/material/dialog";
+import { MAT_LEGACY_DIALOG_SCROLL_STRATEGY as MAT_DIALOG_SCROLL_STRATEGY } from "@angular/material/legacy-dialog";
 import { Dialog, DialogConfig, DEFAULT_DIALOG_CONFIG, DIALOG_SCROLL_STRATEGY } from "@angular/cdk/dialog";
 import { OverlayContainer } from '@angular/cdk/overlay';
 import { DynamicOverlay } from "./dynamic-overlay";
