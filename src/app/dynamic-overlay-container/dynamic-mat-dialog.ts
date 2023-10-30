@@ -27,6 +27,6 @@ export class DynamicMatDialog extends MatDialog {
     // need to apply this styling to make the backdrop with position: fixed styling cover only the containerElement
     renderer.setStyle( containerElement, "transform", "translateZ(0)" );
 
-    this._dialog.setContainerElement( containerElement );
+    (this._dialog as DynamicDialog).setContainerElement( containerElement, renderer );
   }
 }

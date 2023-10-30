@@ -6,7 +6,3 @@ This repository showcases an implementation for custom overlay containers when u
 see [$mdPanel#mdpanel-create-config](https://material.angularjs.org/latest/api/service/$mdPanel#mdpanel-create-config) `attachTo`.
  
 @angular/material2 `Dialog` respectively @angular/cdk `Overlay` is currently missing such functionality.
-
-## PATCH of angular material dialog necessary
-
-cf. [patch.modules.sh](patch.modules.sh)

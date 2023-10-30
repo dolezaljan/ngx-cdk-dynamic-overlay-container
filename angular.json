@@ -71,18 +71,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ngx-cdk-dynamic-overlay-container:build"
+            "buildTarget": "ngx-cdk-dynamic-overlay-container:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ngx-cdk-dynamic-overlay-container:build:production"
+              "buildTarget": "ngx-cdk-dynamic-overlay-container:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ngx-cdk-dynamic-overlay-container:build"
+            "buildTarget": "ngx-cdk-dynamic-overlay-container:build"
           }
         },
         "test": {
